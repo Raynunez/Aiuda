@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title class=" collapse navbar-collapse"> Agenda </title>
+        <link rel="stylesheet" href="Css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="Javascript/Javascript.js"></script>
+    </head>
+    <body>
+        
+        <div class="row">
+            <div class="darkBG col-sm-12">
+                    <h1> Agenda </h1>
+            </div>
+
+        </div>
+
+        <form class="Agenda">
+            <fieldset class="fieldset" id="datos_nuevos">
+                <legend> Agregar contactos</legend>
+                <!-- Label y Botones para nombre-->
+                <label for="nombre"> Nombre: </label>
+                <input type="text" name="nombre" id="Nombre" placeholder="Example: Leonel" required>
+                <!-- Label y Botones para apellido-->
+                <br><br>
+                <label for="apellido"> Apellido: </label>
+                <input type="text" name="apellido" id="Apellido" placeholder="Example: Fernandez" required>
+                <!-- Label y Botones para numero-->
+                <br><br>
+                <label for="numero"> Número: </label>
+                <input type="tel" name="numero" id="Numero" placeholder="Example: 809-364-1111" required>
+                <br><br>
+                <button type="submit" class="btn btn-primary" id="enviar" onclick="enviarDatos()"> Enviar</button>
+            </fieldset>
+   
+            <br>
+                <table class="table-contenido" id="table" width = "100%">
+                    <thead>
+                        <tr id="tRow">
+                            <th id="tNombre">Nombre</th>
+                            <th id="tApellido">Apellido</th>
+                            <th id="tTelefono">Telefono</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody class="body">
+                        <tr>
+                            <td>Rayni</td>
+                            <td>Nunez Espino</td>
+                            <td>8294503801</td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Lisandra</td>
+                            <td>Cruz</td>
+                            <td>8297212705</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rafael</td>
+                            <td>Nunez Duran</td>
+                            <td>8297708004</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </form>
+    </body>
+</html>
